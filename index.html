@@ -1,14 +1,13 @@
 /* 北海道在住
      作成者 TK
 */
-package calcapp.main;
-
 public class Main {
     public static void main(String[] args) {
-        int[] heigths = {172, 149, 152, 191, 155};
-        java.util.Arrays.sort(heights);
-        for (int h : heights) {
-            System.out.println(h);
-        }
+        //1.勇者を作成
+        Hero h = new Hero();
+        //2.フィールドに初期値をセット
+        h.name = "ミナト";
+        h.hp = 100;
+        System.out.println("勇者" + h.name + "を生み出しました！");
     }
 }
