@@ -1,13 +1,15 @@
+
 /* 北海道在住
-     作成者 TK
+   作成者 久慈智哉
+   dokojavaにて学習中
 */
 public class Main {
     public static void main(String[] args) {
-        //1.勇者を作成
-        Hero h = new Hero();
-        //2.フィールドに初期値をセット
-        h.name = "ミナト";
-        h.hp = 100;
-        System.out.println("勇者" + h.name + "を生み出しました！");
+        Hero h1 = new Hero("ミナト");
+        System.out.println(h1.name);
+        Hero h2 = new Hero();
+        System.out.println(h2.name);
+    }
+}
     }
 }
