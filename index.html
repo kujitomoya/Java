@@ -3,19 +3,13 @@
    作成者 久慈智哉
    dokojavaにて学習中
 */
-pubkic class PoisonMatango extends Matango {
-    int poisonCount = 5;
-    public PoisonMatango(char suffix) {
-        super(suffix);
+public class Dancer extends Character {
+    public void dance() {
+        System.out.println(this.name + "は情熱的に踊った");
     }
-    public void attack(Hero h) {
-        super.attack(h);
-        if (this.poisonCount > 0) {
-            System.out.println("さらに毒の胞子をばら撒いた！")
-            int dmg = h.hp / 5;
-            h.hp -= dmg;
-            System.out.println(dmg + "ポイントのダメージ！");
-            this.poisonCount--;
-        }
+    public void attack(Matango m) {
+        System.out.println(this.name + "の攻撃");
+        System.out.println("敵に3ポイントのダメージ");
+        m.hp -= 3;
     }
 }
