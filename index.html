@@ -3,13 +3,16 @@
    作成者 久慈智哉
    dokojavaにて学習中
 */
-public class Dancer extends Character {
-    public void dance() {
-        System.out.println(this.name + "は情熱的に踊った");
+public abstract class TangibleAsset {
+    String bame;
+    int price;
+    String color;
+    public TangibleAsset(String name, int price, String color) {
+        this.name = name;
+        this.price = price;
+        this.color = color;
     }
-    public void attack(Matango m) {
-        System.out.println(this.name + "の攻撃");
-        System.out.println("敵に3ポイントのダメージ");
-        m.hp -= 3;
-    }
+    public String getName() { return this.name; }
+    public int getPrice() { return this.price; }
+    public String getColor() { return this.color; }
 }
